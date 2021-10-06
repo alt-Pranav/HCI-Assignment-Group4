@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="home_style.css">
+
+        <title>HCI Assignment</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="/index.html">Home</a></li>
+                        <li><a class="nav-link" href="Contents/">Contents</a></li>
+                        <li><a class="nav-link" href="About Us/">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br><br>
+        <!-- Code to be reused for each card -->
+        <div class="card">
+            <img src="Screenshot (81).png" alt="street_view" class="responsive">
+            <div class="container">
+                <h4><b>Blog #1</b></h4>
+                <p id="intro_text">When I started this project, I knew that I ...</p>
+            </div>
+        </div>
+
+        <input type="file" name="inputFile" id="inputFile">
+        <br>
+        <pre id="output"></pre>
+
+        <script type="text/javascript">
+            document.getElementById('inputFile').addEventListener('change',
+            function() {
+                var fr = new FileReader();
+                fr.onload = function() {
+                    document.getElementById('intro_text').textContent = fr.result.slice(0, 25) + "...";
+                }
+
+                fr.readAsText(this.files[0]);
+            })
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </body>
+</html>

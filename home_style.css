@@ -1,0 +1,57 @@
+.title{
+    font-size: 65px;
+    background-color: aqua;
+}
+
+body{
+    padding: 5%;
+}
+
+.navbar navbar-expand-lg navbar-light bg-light{
+    padding-bottom: 20%;
+}
+
+.responsive{
+    width: auto;
+    height: auto;
+}
+
+.card{
+    /* add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* on mouse hover, adds a deeper shadow */
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* add some padding inside the card container */
+.container{
+    padding: 4px 16px;
+}
+
+/* unvisited link 
+a:link {
+    color: green;
+  }
+  
+  /* visited link 
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link 
+  a:hover {
+    color: red;
+  }
+  
+  /* selected link 
+  a:active {
+    color: yellow;
+  }
+*/
