@@ -1,0 +1,70 @@
+h1{
+    color: black;
+    text-align: center;
+}
+
+br{
+    line-height: 2%;
+}
+
+/* Styling the menu bar */
+.menubar{
+    width: 100%;
+    background-color: cornflowerblue;
+    overflow: auto; /* in case of the text exceeding boundary limits */
+}
+
+/* for menubar links */
+.menubar a{
+    float: left;
+    text-align: center;
+    padding: 2%;
+    color: white;
+    font-size: 100%;
+}
+
+/* for showing links on menu items during hover */
+.menubar a:hover{
+    background-color: black;
+}
+
+/* to show active/current link */
+.active{
+    background-color: rgb(7, 97, 133);
+}
+
+.responsive{
+    height: auto;
+    width: 100%;
+}
+
+#post_title{
+    display: inline-block;
+    text-align: left;
+}
+
+#post_date{
+    align-self: right;
+    text-align: right;
+    display: inline-block;
+}
+
+.card{
+    /* add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 2%;
+}
+
+/* on mouse hover, adds a deeper shadow */
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* add some padding inside the card container */
+.container{
+    padding: 4px 16px;
+}
