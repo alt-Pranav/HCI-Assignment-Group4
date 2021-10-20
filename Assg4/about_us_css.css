@@ -91,3 +91,14 @@ html {
 .active{
     background-color: rgb(7, 97, 133);
 }
+
+.Center{
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.CenterCard{
+    position: relative;
+    left: 17%;
+}
