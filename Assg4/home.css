@@ -75,13 +75,13 @@ br{
     width: 25%;
     padding: 0 10px;
   }
-  
+
   /* Remove extra left and right margins, due to padding in columns */
   .row {
       margin: 0 -5px;
       align-content: center;
     }
-  
+
   * Clear floats after the columns */
 .row:after {
     content: "";
@@ -96,4 +96,11 @@ br{
       display: block;
       margin-bottom: 20px;
     }
+  }
+
+  .alignleft {
+  	float: left;
+  }
+  .alignright {
+  	float: right;
   }
